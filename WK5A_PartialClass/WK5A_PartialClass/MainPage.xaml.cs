@@ -22,6 +22,7 @@
             if (name != "" && name != null)
                 shape.Name = name;
             else
+                //adding an error message
                 DisplayAlert("Error", "Please enter a valid name of the shape", "OK");
 
             if (width != height)
