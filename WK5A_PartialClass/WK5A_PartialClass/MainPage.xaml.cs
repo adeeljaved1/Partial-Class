@@ -11,6 +11,7 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
+            // reading values of width and height from entry UI component
             var width = int.Parse(WidthValue.Text);
             var height = int.Parse(HeightValue.Text);
 
