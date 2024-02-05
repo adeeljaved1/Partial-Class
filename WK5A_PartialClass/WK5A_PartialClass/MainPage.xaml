@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WK5A_PartialClass.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Draw a Rectangle!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+                x:Name="WidthValue"
+                Placeholder="Enter value of rectangle width"
+                FontSize="22" />
+            <Entry
+                x:Name="HeightValue"
+                Placeholder="Enter value of rectangle height"
+                FontSize="22" />
+         
+            <Entry
+                x:Name="ShapeName"
+                Placeholder="Enter shape name"
+                FontSize="22" />
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="ShapeNameLabel"
+                Text="Rectangle"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+                
+            <Rectangle 
+                 x:Name="RectangleShape"
+                 Fill="Red"
+                 WidthRequest="150"
+                 HeightRequest="50"
+                 HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
